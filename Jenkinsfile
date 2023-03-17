@@ -1,7 +1,7 @@
 // Jenkinsfile (Declarative Pipeline)
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { kubernetes { image 'node:16.17.1-alpine' } }
+    agent { kubernetes }
     stages {
         stage('build') {
             steps {
